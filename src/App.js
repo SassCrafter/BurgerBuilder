@@ -1,5 +1,4 @@
-import Layout from './components/Layout/Layout';
-import Toolbar from './components/Navigation/Toolbar/Toolbar'
+import Layout from './hoc/Layout/Layout'
 import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder';
 
 function App() {

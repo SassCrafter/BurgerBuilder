@@ -1,6 +1,13 @@
 .NavItems {
 	list-style: none;
 	display: flex;
-	align-items: center;
+	flex-direction: column;
 	height: 100%;
+}
+
+@media screen and (min-width: 500px) {
+	.NavItems {
+		flex-direction: row;
+		align-items: center;
+	}
 }

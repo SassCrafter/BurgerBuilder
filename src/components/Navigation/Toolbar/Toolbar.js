@@ -2,13 +2,14 @@ import React from 'react'
 import classes from './Toolbar.module.css'
 import Logo from '../../Logo/Logo'
 import NavItems from '../NavItems/NavItems'
+import DrawerToggler from '../SideDrawer/DrawerToggler/DrawerToggler'
 
-function Toolbar() {
+function Toolbar({drawerOpen, openDrawerHandler}) {
 	return (
 		<header className={classes.Toolbar}>
-			<div>Menu</div>
-			<Logo />
-			<nav>
+			<DrawerToggler drawerOpen={drawerOpen} clickHandler={openDrawerHandler}/>
+			<Logo height='80%'/>
+			<nav className='desktopOnly'>
 				<NavItems />
 			</nav>
 		</header>

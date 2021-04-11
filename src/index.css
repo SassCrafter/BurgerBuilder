@@ -14,3 +14,19 @@ body {
 	font-size: 1.6rem;
 	font-family: 'Open Sans', sans-serif;
 }
+
+.mobileOnly {
+	display: block;
+}
+
+@media screen and (min-width: 499px) {
+	.mobileOnly {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 499px) {
+	.desktopOnly {
+		display: none;
+	}
+}
